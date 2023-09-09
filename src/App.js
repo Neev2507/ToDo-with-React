@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useEffect } from "react";
 import './App.css';
 import Home from './pages/home'
-import Main from './Main'
+import Main from './pages/Main'
 
 const App=()=>{
     return(
@@ -11,8 +11,8 @@ const App=()=>{
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Layout/>}>
-              <Route index element={<Home />} />
-              <Route path="home" element={<Home />} />
+              <Route home element={<Home />} />
+              <Route path="main" element={<Main/>} />
               
             </Route>
           </Routes>
