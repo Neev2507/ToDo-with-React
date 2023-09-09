@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+*{
+    margin:0;
+    padding:0;
+    font-family:'Poppins',sans-serif;
+    box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    width:100%;
+    min-height: 100vh;
+    background:black;
+    padding:10px;
+    color:white;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.to-do{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding:40px 30px 70px;
+    border-radius: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.to-do h2{
+    color:#002675;
+    display: flex;
+    align-items: center;
+    margin-bottom:20px;
 }
-
-.App-link {
-  color: #61dafb;
+.row{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom:25px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input{
+    flex:1;
+    border:none;
+    outline:none;
+    background: transparent;
+    padding:10px;
+    font-weight:14px;
+}
+button{
+    border:none;
+    outline:none;
+    padding:16px 50px;
+    background:#ff5945;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    border-radius: 40px;
+}
+ul li{
+    list-style: none;
+    padding:12px 8px 12px 50px;
+    user-select: none;
+    cursor:pointer;
+    font-size: 17px;
+    position: relative;
+}
+ul li::before{
+    content:'';
+    position:absolute;
+    height:28px;
+    width:28px;
+    border-radius: 50%;
+    background-image: url('unchecked.png');
+    background-size:cover;
+    background-position: center;
+    top:12px;
+    left:8px;
+}
+ul li.checked{
+    text-decoration: line-through;
+    color:#555;
+}
+ul li.checked::before{
+    background-image:url('checked.png')
+}
+ul li span{
+    position:absolute;
+    right:0;
+    top:5px;
+    width:40px;
+    height:40px;
+    font-size:22px;
+    color:#555;
+    line-height:40px;
+    text-align:center;
+    border-radius: 50px;
+}
+ul li span:hover{
+    background: #edeef0;
+}
+.login{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 10px;
+    margin-bottom:25px;
+}
+.remember{
+    border:none;
+    outline:none;
+    padding:16px 50px;
+    background:#ff5945;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    border-radius: 40px;
+}
+.white{
+    color:linear-gradient(120deg, #0ee3d5,#370489);
+}
+.list{
+    color:black;
+}
+.nav{
+    color:black;
 }

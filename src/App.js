@@ -1,25 +1,39 @@
-import logo from './logo.svg';
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useEffect } from "react";
 import './App.css';
+import Main from './Main'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App=()=>{
+    return(
+        <div className='container'>
+        
+        <div className="to-do">
+        <h2>CheckList Champion: Conquer your ToDos</h2>
+        <form action="">
+            <div class="container">
+                <div>
+                    <label for="name"><b>Name</b></label><br></br>
+                    <input className="login" type="text" placeholder="Enter your name" name="name" required/><br/>
+                    <label for="email"><b>Email</b></label><br></br>
+                    <input class="login" type="text" placeholder="Enter email" name="email" required/><br/>
+                    <label for="password"><b>Password</b></label><br></br>
+                  <input class="login" type="password" placeholder="Enter Password" name="password" required/><br/>
+              
+                  <button type="submit" >Login</button><br></br><br/>
+                  <label class='remember'>
+                    <input  type="checkbox" checked="checked" name="remember"/> Remember me
+                  </label>
+                  </div>
+                </div>
+                
+              </form>
+
+                </div>
+            </div>
+        
+        
+    );
 }
 
 export default App;
