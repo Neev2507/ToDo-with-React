@@ -10,7 +10,7 @@ const Home=()=>{
         
         <div className="to-do">
         <h2>CheckList Champion: Conquer your ToDos</h2>
-        <form action="/home">
+        <form action="/Main">
             <div class="container">
                 <div>
                     <label for="name"><b>Name</b></label><br></br>

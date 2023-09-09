@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useEffect } from "react";
-import './App.css';
+import './pages/App.css';
 import Home from './pages/home'
 import Main from './pages/Main'
-
+import Layout from './pages/layout'
 const App=()=>{
     return(
       
