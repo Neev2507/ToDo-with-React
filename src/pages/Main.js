@@ -1,10 +1,11 @@
-import React from "react";
+import React,{Component} from "react";
 import { useState } from "react";
 import './App.css';
 import notepad from './notepad.png'
 const Main=()=>{
     const [input,setInput] = useState('');
     const [deadline,setDeadline] = useState('');
+    const [tasks, setTasks] = useState([]);
     const add_task=()=>{
         if(input===''){
             alert('Add your task!')
@@ -27,11 +28,7 @@ const Main=()=>{
             <div class="button">
                 <button onClick={add_task}>Add</button>
             </div>
-            <ul id="list-container" class="list">
-                {/*<li class="checked draggable">Task-1 - Date</li>
-                <li class="draggable">Task-2</li>
-    <li class=>Task-3</li>*/}
-            </ul>
+            
            
            
        
