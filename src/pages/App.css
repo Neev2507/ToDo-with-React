@@ -118,6 +118,13 @@ ul li span:hover{
 }
 .list{
     color:black;
+   
+    align-items: center;
+    
+    
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom:25px;
 }
 .nav{
     color:black;
