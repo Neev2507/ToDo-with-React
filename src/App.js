@@ -5,6 +5,7 @@ import './pages/App.css';
 import Home from './pages/home'
 import Main from './pages/Main'
 import Layout from './pages/layout'
+import '@picocss/pico'
 const App=()=>{
     return(
       

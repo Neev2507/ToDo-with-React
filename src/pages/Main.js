@@ -5,7 +5,7 @@ import notepad from './notepad.png'
 import checked from './checked.png'
 import unchecked from './unchecked.png'
 const Main=()=>{
-    const cross='X';
+    const cross='                                   X';
     const [input,setInput] = useState('');
     const [deadline,setDeadline] = useState('');
     const [tasks, setTasks] = useState([]);

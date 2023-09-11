@@ -1,11 +1,12 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useEffect } from "react";
-import './App.css';
+
 import Main from './Main'
 import { useOutletContext } from "react-router";
 const Home=()=>{
     return(
+      <body>
         <div className='container'>
         
         <div className="to-do">
@@ -31,7 +32,7 @@ const Home=()=>{
 
                 </div>
             </div>
-        
+        </body>
         
     );
 }
